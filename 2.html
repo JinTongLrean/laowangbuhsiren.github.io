@@ -1,13 +1,25 @@
-<html>
-<body>
-<a href="http://www.baidu.com">baidu</a>
-<a href="javascript:popup('http://www.baidu.com/');">baidu2</a>
-<a href="#" onclick="popup('http://www.baidu.com/'); return false;">baidu3</a>
-</body>
-<script>
-function popup(winURL){
-window.open(winURL,"popup","width=320,height=480");
-}
-document.getElementsByTagName("a")[0].onclick=function(){popup(this.href);return false;};
-</srcipt>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   advertisement
+  </title>
+ </head>
+ <body>
+  <a href="https://www.baidu.com/picture/ 
+
+">网页1</a>
+  <a href="javascript:popUp('https://www.baidu.com/picture/ 
+
+');">网页2</a>
+  <a href="#" onclick="popUp('https://www.baidu.com/picture/ 
+
+');return false;">网页3</a>
+ </body>
+ <script>
+  function popUp(winURL) {
+   window.open(winURL,"popUp","width=320,height=480");
+  }
+  document.getElementByTagName("a")[0].onclick=function(){popUp(this.href);return false;};
+ </script>
 </html>
