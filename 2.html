@@ -1,25 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <title>
-   advertisement
-  </title>
- </head>
- <body>
-  <a href="https://www.baidu.com/picture/ 
-
-">ç½‘é¡µ1</a>
-  <a href="javascript:popUp('https://www.baidu.com/picture/ 
-
-');">ç½‘é¡µ2</a>
-  <a href="#" onclick="popUp('https://www.baidu.com/picture/ 
-
-');return false;">ç½‘é¡µ3</a>
- </body>
- <script>
-  function popUp(winURL) {
-   window.open(winURL,"popUp","width=320,height=480");
-  }
-  document.getElementByTagName("a")[0].onclick=function(){popUp(this.href);return false;};
- </script>
+<html>
+<body>
+<ul>
+<li><a href="1.jpg"  onclick="showpic(this);return false;" title="Ð¡¹·1">gou1</a></li>
+<li><a href="2.jpg"  onclick="showpic(this);return false;" title="Ð¡¹·2">gou2</a></li>
+<li><a href="3.jpg"  onclick="showpic(this);return false;" title="Ð¡¹·3">gou3</a></li>
+</ul>
+<img id="p" src="4.jpg">
+<p id="d">choose an img</p>
+<script src="1.js"></script>
+</body>
 </html>
